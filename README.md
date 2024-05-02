@@ -6,6 +6,11 @@ end :
 ## Content
 - Project abstract
 - Introduction
+    - X-ray
+    - Bone Fracture Multi-Region
+    - Deep Learning
+    - Image Classification
+    - Pytoch
 - Materials and Methods
     - Materials
     - Methods
@@ -26,19 +31,42 @@ end :
 --- 
 ## Project abstract
 
+
+
+---
 ## Introduction
-### 
+### X-ray
+### Bone Fracture Multi-Region
+### Deep Learning
+### Image Classification
+### Pytoch
+
 
 ## Materials and Methods
 ### Materials
  os, Numpy, Pandas, Image, Matplotlib, Seaborn, Pytorch
   
+
 ### Methods
+#### EDA
+#### Data split
+#### Model definition
+#### Model tuning
+#### Final model
+#### Make web page
+
+
 
 ## Results
 
+
+
 ## Discussion
 
+
+
 ## Conclusion
+
+
 
 ## References

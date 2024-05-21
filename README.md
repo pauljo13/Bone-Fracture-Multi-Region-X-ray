@@ -1,5 +1,5 @@
 # 💀 Bone Fracture Multi-Region X-ray to Pytoch
-start : 2024-05-02  
+start : 2024-05-20  
 end :  
 
 ---
@@ -60,6 +60,19 @@ PyTorch는 오픈 소스 머신 러닝 라이브러리로, 주로 딥러닝 응�
 
 ### Methods
 #### EDA
+##### 데이터 확인
+데이터를 직접 유관으로 확인, 데이터 확인 결과 train, test, val 파일에 각각 fractured와 No fractured가 존재함 No fractured가 정상인의 X-ray 이미지, fractured에 골절 X-ray이미지가 존재 했다. 이미지들은 이름과 사이즈가 제각각으로 확인데 데이터 관리를 위해 이미지 이름을 수정한다.
+이미지의 이름과 이미지의 크기 taget으로 데이터 프레임을 만들어 데이터를 쉽게 볼 수 있도록 만든다.
+train :  4604, 4640 개  
+val :  337, 492 개  
+test : 238, 268 개  
+로 총 10579개 가 존재한다.
+fractured와 No fractured의 비율은 49.0%(5179) 대 51.0%(5400) 이다.
+  
+##### 데이터 전처리
+이미지 사이즈는 width와 height는 최소 사이즈가 100 pixels 최대 사이즈는 width는 4232 pixels height는 5823 pixels이다. 평균 width는 299.7 pixels height는 325.03 pixels이다. 그래서 이미지의 크기를 일정하게 만들어주는 전처리 과정을 가져야 한다. 
+딥러닝의 최적인 사이즈 224x224로 패딩을 사용한다.
+  
 #### Data split
 #### Model definition
 #### Model tuning
